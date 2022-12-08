@@ -1,20 +1,134 @@
-header{
-    background-color: rgb(255, 251, 0);
-        color: black;
-        text-align: center;
-display: flex;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-header{
-    background-color: rgb(255, 251, 0);
-        color: black;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-height: 600px;
-        gap: 100px;
-        justify-content: flex-start;
-        
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 243, 0, 0.911);
+}
 
+header p {
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 80px;
+  max-height: 60px;
+  display: flex;
+}
+
+body {
+  font-family: cursive;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+article {
+  width: 360px;
+  border: 1px solid #06aa48;
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  color: #333;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+figcaption {
+  color: #555;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  text-align: justify;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #06aa48;
+}
+
+main {
+  display: flex;
+  margin: 15px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(240, 65, 65);
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+}
+
+.menu li:hover {
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
