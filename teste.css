@@ -52,13 +52,13 @@ img {
 }
 
 p {
-  color: #333;
+  color: rgb(8, 8, 8);
   text-align: justify;
   margin-left: 10px;
   margin-right: 10px;
 }
 figcaption {
-  color: #555;
+  color: rgb(0, 0, 0);
   text-align: justify;
   margin-left: 10px;
   margin-right: 10px;
@@ -131,4 +131,55 @@ input[type="checkbox"] {
   .hamburger {
     display: block;
   }
+}
+
+.dark {
+  background-color: #1b1a17;
+  color: #f0e3ca;
+}
+
+.light {
+  background-color: #e3f6ff;
+  color: #8dcbe6;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #0a2647;
+  color: #2c74b3;
+  background-color: rgb(60, 255, 0);
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.1);
+}
+
+.label .ball {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.1s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
 }

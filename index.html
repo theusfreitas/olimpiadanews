@@ -13,6 +13,11 @@
       <img class="logo" src="olimpiadas.png" alt="" />
       <p>Olimpiada News</p>
 
+      <input type="checkbox" class="checkbox" id="clique" />
+      <label class="label" for="clique">
+        <div class="ball"></div>
+      </label>
+
       <nav>
         <input type="checkbox" id="checkbox_toggle" />
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
@@ -39,7 +44,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="dark">
       <article>
         <picture>
           <source
@@ -107,15 +112,9 @@
 
       <article>
         <picture>
-          <source
-            media="(min-width:480 )"
-            src="imagens/ginastica_prata-pequenas.jpg"
-          />
-          <source
-            media="(min-width:640 )"
-            srcset="imagens/ginastica_prata-media.jpg"
-          />
-          <img src="imagens/ginastica_prata.jpg" alt="ginastica" />
+          <source media="(min-width:480 )" src="ginastica_prata-pequenas.jpg" />
+          <source media="(min-width:640 )" srcset="ginastica_prata-media.jpg" />
+          <img src="ginastica_prata.jpg" alt="ginastica" />
           <figcaption>
             Rebeca Andrade é prata nas olimpíadas - foto: Ricardo Bufolin/CBG
           </figcaption>
@@ -203,4 +202,5 @@
       </article>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
